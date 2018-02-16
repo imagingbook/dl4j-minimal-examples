@@ -1,4 +1,4 @@
-package tech.dubs;
+package examples;
 
 import org.datavec.api.records.reader.RecordReader;
 import org.datavec.api.records.reader.impl.csv.CSVRecordReader;
@@ -32,7 +32,7 @@ import org.slf4j.impl.SimpleLogger;
  *
  */
 
-public class App
+public class IrisClassifier_2
 {
    // private static Logger log = LoggerFactory.getLogger(App.class);
 
@@ -43,7 +43,7 @@ public class App
     	System.setProperty(SimpleLogger.DEFAULT_LOG_LEVEL_KEY, "info");
     	System.setProperty(SimpleLogger.SHOW_DATE_TIME_KEY, "false");
 
-    	Logger log = LoggerFactory.getLogger(App.class);
+    	Logger log = LoggerFactory.getLogger(IrisClassifier_2.class);
 
 		// log.trace("trace");
 		// log.debug("debug");

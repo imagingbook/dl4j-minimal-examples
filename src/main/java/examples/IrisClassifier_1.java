@@ -1,4 +1,4 @@
-package com.baeldung.deeplearning4j;
+package examples;
 
 import java.io.IOException;
 
@@ -30,7 +30,7 @@ import org.nd4j.linalg.lossfunctions.LossFunctions;
  *
  */
 
-public class IrisClassifier {
+public class IrisClassifier_1 {
 
     private static final int CLASSES_COUNT = 3;
     private static final int FEATURES_COUNT = 4;
