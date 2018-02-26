@@ -74,7 +74,12 @@ public class IrisClassifier_1 {
 
         MultiLayerNetwork model = new MultiLayerNetwork(configuration);
         model.init();
+        
+        long startTime = System.currentTimeMillis();
         model.fit(trainingData);
+        long timeUsed = System.currentTimeMillis() - startTime;
+        
+        System.out.println("Time used for training: " + timeUsed + " ms");
 
         INDArray output = model.output(testData.getFeatureMatrix());
 
